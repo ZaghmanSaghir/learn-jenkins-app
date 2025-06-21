@@ -20,5 +20,10 @@ pipeline {
                 '''
             }
         }
+        stege('Test'){
+            steps{
+                sh 'echo "Test Stage"'
+            }
+        }
     }
 }

@@ -20,9 +20,9 @@ pipeline {
                 '''
             }
         }
-        stege('Test'){
+        stage('Test'){
             steps{
-                sh 'echo "Test Stage"'
+                echo 'Test Stage'
             }
         }
     }

@@ -35,6 +35,8 @@ pipeline {
             steps {
                 sh '''
                     #test -f build/index.html
+                    apk add --no-cache python3 make g++  
+                    npm ci
                     npm test
                 '''
             }
